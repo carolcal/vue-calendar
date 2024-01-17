@@ -1,0 +1,57 @@
+* {
+    font-family: Avenir, Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+}
+
+.header {
+    width: 100%;
+    border-bottom: 1px solid #7f7f7f;
+    margin-bottom: 1em;
+}
+
+.calendar {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: 1fr repeat(5, 3fr);
+    grid-gap: 0.5em;
+    margin: 0 auto;
+    width: 100%;
+    padding: 0
+}
+
+.weekdays {
+    margin: 0;
+}
+
+.monthdays {
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    margin: 0;
+    min-height: 100px;
+    padding: 5px;
+    border-radius: 15px;
+}
+
+.current-month{
+    background-color: #eaeaea;
+}
+
+.monthdays > .day {
+    background-color: #fafafa;
+    width: 25px;
+    height: 25px;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
